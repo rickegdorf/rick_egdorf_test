@@ -595,140 +595,231 @@ pre code, pre tt {
   <a href="javascript:void(0)">Contact</a>
 </div>
 
-<div class="content">
-  <h3>Sticky Navigation Example</h3>
-  <p>The navbar will stick to the top when you reach its scroll position.</p>
-
-</div>
-<md-block>
-# API Documentation Portfolio
-
-*Senior Technical Writer specializing in API Reference Documentation*
-
-***
-
-## Effective API Field Definitions
-
-Have you ever experienced bad documentation? Whether it's assembling your child's toy or setting up your camera for that once-in-a-lifetime solar eclipse, there is no room for ambiguity. Clearly written API reference documentation is even more important because the target audience is technical and efficiency is key. Following is a sample JSON and the corresponding field definitions table from an API reference guide. Note the useful, descriptive definitions written by a technical writer. Which do you prefer?
-
-**Sample JSON**
-
-```
-{ 
-  "addressList": [
+               <h1 id="0">API Documentation Portfolio</h1>
+<p id="2"><em>Senior Technical Writer specializing in API Reference Documentation</em></p>
+<hr id="4" />
+<h2 id="6">Effective API Field Definitions</h2>
+<p id="8">Have you ever experienced bad documentation? Whether it's assembling your child's toy or setting up your camera for that once-in-a-lifetime solar eclipse, there is no room for ambiguity. Clearly written API reference documentation is even more important because the target audience is technical and efficiency is key. Following is a sample JSON and the corresponding field definitions table from an API reference guide. Note the useful, descriptive definitions written by a technical writer. Which do you prefer?</p>
+<p id="10"><strong>Sample JSON</strong></p>
+<pre><code id="12">{ 
+  &quot;addressList&quot;: [
     {
-      "address1": "string",
-      "address2": "string",
-      "city": "string",
-      "country": "string",
-      "postalcode": "string",
-      "state": "string" 
+      &quot;address1&quot;: &quot;string&quot;,
+      &quot;address2&quot;: &quot;string&quot;,
+      &quot;city&quot;: &quot;string&quot;,
+      &quot;country&quot;: &quot;string&quot;,
+      &quot;postalcode&quot;: &quot;string&quot;,
+      &quot;state&quot;: &quot;string&quot; 
     } 
   ], 
-  "languageList": [
+  &quot;languageList&quot;: [
     {
-     "languageCode": "string", 
-     "languageUse": "string" 
+     &quot;languageCode&quot;: &quot;string&quot;, 
+     &quot;languageUse&quot;: &quot;string&quot; 
     }
   ], 
-  "clientAffiliation": [ 
+  &quot;clientAffiliation&quot;: [ 
     { 
-      "billingPrefID": "int", 
-      "effectiveDate": "string", 
-      "expirationDate": "string" 
+      &quot;billingPrefID&quot;: &quot;int&quot;, 
+      &quot;effectiveDate&quot;: &quot;string&quot;, 
+      &quot;expirationDate&quot;: &quot;string&quot; 
     }
   ],
-  "data": [
-    "holdStatus": "boolean"
+  &quot;data&quot;: [
+    &quot;holdStatus&quot;: &quot;boolean&quot;
     ]	
 }
-```
-
-**Field Definitions Table**
-
-|Object |Uninformative, Ambiguous Definition |Useful, Descriptive Definition |
-|---|---|---|
-|addressList  |Address data  |An object that contains details about the client's address.  |
-|addressList.clientName |Client name  |Name of the client.  |
-|addressList.address1  |Address  |First line of the client's address.<br>Maximum: 55 characters.  |
-|addressList.address2  |Address |Additional address line, if needed. Examples: apartment number, PO box, care of address.<br>Maximum: 55 characters  |
-|addressList.country |Country name |Name of the country of the client's address. Country codes are defined by the International Organization for Standardization (ISO). <br>	Maximum: 3 characters. | 
-|addressList.postalcode  |zipcode |Five-digit postal code for a U.S. location. **Note:** U.S. postal codes may also contain a hyphen and the four-digit extension.<br>Maximum: 20 characters.  | 
-|addressList.state  |State  |Name of the city of the client’s address.<br>Maximum: 50 characters.  |
-|languageList  |Language data |An object that contains details about the client's preferred language and any other languages used by the client’s employees.  |
-|languageList.languageCode  |Language code |A numeric code that indicates the client's language preference.<br>Maximum: 2 characters. |
-|languageList.languageUse  |Indicates language used  |A numeric code that indicates the general acceptance of each language by the client’s employees. <ul><li>1: Considered the native language of many or most employees.</li><li>2: Used less often but still spoken by many employees.</li><li>3: Used infrequently.</li></ul>  |
-|clientAffiliation  |Client affiliation data  |An object that contains information about the relationship between the client and ABC Corp.  |
-|clientAffiliation.billingPrefID  |ID of preferred billing  |The system-generated identifier that represents a billing preference record.  |
-|clientAffiliation.effectiveDate |Effective date |Start date of the affiliation record for the client and XYZ Corp. <br> Format: YYYY-MM-DD |
-|clientAffiliation.expirationDate |Expiration date  |End date of the affiliation record for the client and XYZ Corp. <br> Format: YYYY-MM-DD   |
-|data |Data  |An object that contains information about the contract.  |
-|data.holdStatus |Defines holds on contract  |Indicates whether the client has any holds currently applied to the contract. <br>Valid values: <ul><li>0: False (default)</li><li>1: True</li></ul>|
-
-***
-
-## API Field Definitions Generated from Unit Test Field Descriptor JSON Files
-
-The following example shows how I partnered with Engineering to implement a highly efficient and collaborative methodology that generated accurate, real-time API documenation at code deployment. API field definitions were coded into the unit test field descriptor JSON file. Technical Writing and Engineering teams were required pull request approvers, which ensured collaboration and accurate documentation. 
-
-**Sample Unit Test Descriptor File**
-
-```
-[
+</code></pre>
+<p id="43"><strong>Field Definitions Table</strong></p>
+<table id="45">
+<thead>
+<tr id="45">
+<th id="45">Object</th>
+<th id="45">Uninformative, Ambiguous Definition</th>
+<th id="45">Useful, Descriptive Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr id="47">
+<td id="47">addressList</td>
+<td id="47">Address data</td>
+<td id="47">An object that contains details about the client's address.</td>
+</tr>
+<tr id="48">
+<td id="48">addressList.clientName</td>
+<td id="48">Client name</td>
+<td id="48">Name of the client.</td>
+</tr>
+<tr id="49">
+<td id="49">addressList.address1</td>
+<td id="49">Address</td>
+<td id="49">First line of the client's address.<br>Maximum: 55 characters.</td>
+</tr>
+<tr id="50">
+<td id="50">addressList.address2</td>
+<td id="50">Address</td>
+<td id="50">Additional address line, if needed. Examples: apartment number, PO box, care of address.<br>Maximum: 55 characters</td>
+</tr>
+<tr id="51">
+<td id="51">addressList.country</td>
+<td id="51">Country name</td>
+<td id="51">Name of the country of the client's address. Country codes are defined by the International Organization for Standardization (ISO). <br>	Maximum: 3 characters.</td>
+</tr>
+<tr id="52">
+<td id="52">addressList.postalcode</td>
+<td id="52">zipcode</td>
+<td id="52">Five-digit postal code for a U.S. location. <strong>Note:</strong> U.S. postal codes may also contain a hyphen and the four-digit extension.<br>Maximum: 20 characters.</td>
+</tr>
+<tr id="53">
+<td id="53">addressList.state</td>
+<td id="53">State</td>
+<td id="53">Name of the city of the client’s address.<br>Maximum: 50 characters.</td>
+</tr>
+<tr id="54">
+<td id="54">languageList</td>
+<td id="54">Language data</td>
+<td id="54">An object that contains details about the client's preferred language and any other languages used by the client’s employees.</td>
+</tr>
+<tr id="55">
+<td id="55">languageList.languageCode</td>
+<td id="55">Language code</td>
+<td id="55">A numeric code that indicates the client's language preference.<br>Maximum: 2 characters.</td>
+</tr>
+<tr id="56">
+<td id="56">languageList.languageUse</td>
+<td id="56">Indicates language used</td>
+<td id="56">A numeric code that indicates the general acceptance of each language by the client’s employees. <ul><li>1: Considered the native language of many or most employees.</li><li>2: Used less often but still spoken by many employees.</li><li>3: Used infrequently.</li></ul></td>
+</tr>
+<tr id="57">
+<td id="57">clientAffiliation</td>
+<td id="57">Client affiliation data</td>
+<td id="57">An object that contains information about the relationship between the client and ABC Corp.</td>
+</tr>
+<tr id="58">
+<td id="58">clientAffiliation.billingPrefID</td>
+<td id="58">ID of preferred billing</td>
+<td id="58">The system-generated identifier that represents a billing preference record.</td>
+</tr>
+<tr id="59">
+<td id="59">clientAffiliation.effectiveDate</td>
+<td id="59">Effective date</td>
+<td id="59">Start date of the affiliation record for the client and XYZ Corp. <br> Format: YYYY-MM-DD</td>
+</tr>
+<tr id="60">
+<td id="60">clientAffiliation.expirationDate</td>
+<td id="60">Expiration date</td>
+<td id="60">End date of the affiliation record for the client and XYZ Corp. <br> Format: YYYY-MM-DD</td>
+</tr>
+<tr id="61">
+<td id="61">data</td>
+<td id="61">Data</td>
+<td id="61">An object that contains information about the contract.</td>
+</tr>
+<tr id="62">
+<td id="62">data.holdStatus</td>
+<td id="62">Defines holds on contract</td>
+<td id="62">Indicates whether the client has any holds currently applied to the contract. <br>Valid values: <ul><li>0: False (default)</li><li>1: True</li></ul></td>
+</tr>
+</tbody>
+</table>
+<hr id="64" />
+<h2 id="66">API Field Definitions Generated from Unit Test Field Descriptor JSON Files</h2>
+<p id="68">The following example shows how I partnered with Engineering to implement a highly efficient and collaborative methodology that generated accurate, real-time API documenation at code deployment. API field definitions were coded into the unit test field descriptor JSON file. Technical Writing and Engineering teams were required pull request approvers, which ensured collaboration and accurate documentation.</p>
+<p id="70"><strong>Sample Unit Test Descriptor File</strong></p>
+<pre><code id="72">[
   {
-    "path": "requestData",
-    "type": "object",
-    "length": "",
-    "required": true,
-    "description": "An object that contains information about the request."
+    &quot;path&quot;: &quot;requestData&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;length&quot;: &quot;&quot;,
+    &quot;required&quot;: true,
+    &quot;description&quot;: &quot;An object that contains information about the request.&quot;
   },
   {
-    "path": "requestData.submitterID",
-    "type": "string",
-    "length": "25",
-    "required": true,
-    "description": "A unique indentifier for the sender of the request. \n\nMaximum: 25 characters. \n\nValid value: ABC: Landslide."
+    &quot;path&quot;: &quot;requestData.submitterID&quot;,
+    &quot;type&quot;: &quot;string&quot;,
+    &quot;length&quot;: &quot;25&quot;,
+    &quot;required&quot;: true,
+    &quot;description&quot;: &quot;A unique indentifier for the sender of the request. \n\nMaximum: 25 characters. \n\nValid value: ABC: Landslide.&quot;
   },
   {
-    "path": "requestData.requests[]",
-    "type": "array",
-    "length": "",
-    "required": true,
-    "description": "An array that contains additional data about the request. Typically, the request is for a claim, but is not limited to a claim request."
+    &quot;path&quot;: &quot;requestData.requests[]&quot;,
+    &quot;type&quot;: &quot;array&quot;,
+    &quot;length&quot;: &quot;&quot;,
+    &quot;required&quot;: true,
+    &quot;description&quot;: &quot;An array that contains additional data about the request. Typically, the request is for a claim, but is not limited to a claim request.&quot;
   }
   ...
 ]
-```
-
-**Output Generated from the Above File**
-
-Following is the data pulled directly from the key value pairs to build the documentation. 
-
-|Path | Type | Length | Required | Description |
-|--|--|--|--|--|
-| requestData | object |  | true | An object that contains information about the request. |
-| requestData.submitterID | string |25 | true |A unique indentifier for the sender of the request. <br>Maximum: 25 characters. <br>Valid value: ABC: Landslide. |
-| requestData.requests[] | array | | true | An array that contains additional data about the request. Typically, the request is for a claim, but is not limited to a claim request. |
-
-
-***
-
-## Error Message Examples
-
-Error messages can be more useful and less frustrating by explaining what happened, why it happened, and a solution. If space is limited, explain the error message so that those key points are implied.
-
-|Ambiguous Error Message |More Useful Error Message |
-|---| ---|
-|Invalid format |Please enter a password using the [approved format](url.html). |
-|Incorrect format |Please enter your email address in the following format: yourname@example.com  |
-|Specified date is incorrect  |Please enter the date in the following format, including the dashes: YYYY-MM-DD  |
-|Bad parameter. There was an error in the request |The request payload may have a formatting error. Please review and try submitting again. |
-|Invalid JSON in your request  |Either the JSON is invalid or the incorrect ```Content-Type``` header was sent. Please check and try again. |
-
-
-  
-</md-block>
-
+</code></pre>
+<p id="99"><strong>Output Generated from the Above File</strong></p>
+<p id="101">Following is the data pulled directly from the key value pairs to build the documentation.</p>
+<table id="103">
+<thead>
+<tr id="103">
+<th id="103">Path</th>
+<th id="103">Type</th>
+<th id="103">Length</th>
+<th id="103">Required</th>
+<th id="103">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr id="105">
+<td id="105">requestData</td>
+<td id="105">object</td>
+<td id="105"></td>
+<td id="105">true</td>
+<td id="105">An object that contains information about the request.</td>
+</tr>
+<tr id="106">
+<td id="106">requestData.submitterID</td>
+<td id="106">string</td>
+<td id="106">25</td>
+<td id="106">true</td>
+<td id="106">A unique indentifier for the sender of the request. <br>Maximum: 25 characters. <br>Valid value: ABC: Landslide.</td>
+</tr>
+<tr id="107">
+<td id="107">requestData.requests[]</td>
+<td id="107">array</td>
+<td id="107"></td>
+<td id="107">true</td>
+<td id="107">An array that contains additional data about the request. Typically, the request is for a claim, but is not limited to a claim request.</td>
+</tr>
+</tbody>
+</table>
+<hr id="110" />
+<h2 id="112">Error Message Examples</h2>
+<p id="114">Error messages can be more useful and less frustrating by explaining what happened, why it happened, and a solution. If space is limited, explain the error message so that those key points are implied.</p>
+<table id="116">
+<thead>
+<tr id="116">
+<th id="116">Ambiguous Error Message</th>
+<th id="116">More Useful Error Message</th>
+</tr>
+</thead>
+<tbody>
+<tr id="118">
+<td id="118">Invalid format</td>
+<td id="118">Please enter a password using the <a href="file:///C:/Users/regdo/OneDrive/Documents/GitHub/rickegdorf/url.html">approved format</a>.</td>
+</tr>
+<tr id="119">
+<td id="119">Incorrect format</td>
+<td id="119">Please enter your email address in the following format: yourname@example.com</td>
+</tr>
+<tr id="120">
+<td id="120">Specified date is incorrect</td>
+<td id="120">Please enter the date in the following format, including the dashes: YYYY-MM-DD</td>
+</tr>
+<tr id="121">
+<td id="121">Bad parameter. There was an error in the request</td>
+<td id="121">The request payload may have a formatting error. Please review and try submitting again.</td>
+</tr>
+<tr id="122">
+<td id="122">Invalid JSON in your request</td>
+<td id="122">Either the JSON is invalid or the incorrect <code>Content-Type</code> header was sent. Please check and try again.</td>
+</tr>
+</tbody>
+</table>
   
 <script>
 window.onscroll = function() {myFunction()};
